@@ -11,7 +11,6 @@ logger = logging.getLogger(__name__)
 res = requests.get("http://www.marketwatch.com/investing/stock/aapl")
 #logger.debug("res = {}".format(res.text))
 
-from bs4 import BeautifulSoup
 soup = BeautifulSoup(res.text,'html.parser')
 #logger.debug("soup = {}".format(soup.title.string))
 
